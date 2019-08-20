@@ -24,6 +24,7 @@ exclude       = [
 publish = false
 
 [features]
+default = ["log"]
 log = ["tracing/log"]
 
 [dependencies]
