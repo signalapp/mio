@@ -111,8 +111,8 @@ impl AsRawFd for Selector {
 
 impl Drop for Selector {
     fn drop(&mut self) {
-        if let Err(err) = syscall!(close(self.ep)) {
-            error!("error closing epoll: {}", err);
+        if let Err(error) = syscall!(close(self.ep)) {
+            error!(message = "error closing epoll", %error);
         }
     }
 }

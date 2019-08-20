@@ -492,9 +492,9 @@ impl Registry {
         S: event::Source + ?Sized,
     {
         trace!(
-            "registering event source with poller: token={:?}, interests={:?}",
-            token,
-            interests
+            message = "registering event source with poller",
+            ?token,
+            ?interests
         );
         source.register(self, token, interests)
     }
@@ -558,9 +558,9 @@ impl Registry {
         S: event::Source + ?Sized,
     {
         trace!(
-            "reregistering event source with poller: token={:?}, interests={:?}",
-            token,
-            interests
+            message = "reregistering event source with poller",
+            ?token,
+            ?interests
         );
         source.reregister(self, token, interests)
     }
