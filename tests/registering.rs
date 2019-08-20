@@ -2,7 +2,7 @@ use std::io::{self, Write};
 use std::thread::sleep;
 use std::time::Duration;
 
-use log::{debug, info, trace};
+use tracing::{debug, info, trace};
 
 #[cfg(debug_assertions)]
 use mio::net::UdpSocket;

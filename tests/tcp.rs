@@ -7,10 +7,10 @@ use std::time::Duration;
 use std::{net, thread};
 
 use bytes::{Buf, Bytes, BytesMut};
-use log::{debug, info};
 #[cfg(unix)]
 use net2::TcpStreamExt;
 use slab::Slab;
+use tracing::{debug, info};
 
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interests, Poll, Registry, Token};

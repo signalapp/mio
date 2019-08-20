@@ -4,7 +4,7 @@ use std::str;
 use std::time;
 
 use bytes::{Buf, BufMut, Bytes, BytesMut};
-use log::{debug, info};
+use tracing::{debug, info};
 
 use mio::net::UdpSocket;
 use mio::{Events, Interests, Poll, Registry, Token};

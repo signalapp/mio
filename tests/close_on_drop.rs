@@ -1,5 +1,5 @@
 use bytes::BytesMut;
-use log::debug;
+use tracing::debug;
 
 use mio::net::{TcpListener, TcpStream};
 use mio::{Events, Interests, Poll, Token};

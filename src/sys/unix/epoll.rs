@@ -5,7 +5,7 @@ use std::time::Duration;
 use std::{cmp, i32, io, ptr};
 
 use libc::{EPOLLET, EPOLLIN, EPOLLOUT};
-use log::error;
+use tracing::error;
 
 use crate::sys::Events;
 use crate::{Interests, Token};

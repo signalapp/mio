@@ -5,7 +5,7 @@ use std::sync::atomic::{AtomicUsize, Ordering};
 use std::time::Duration;
 use std::{cmp, io, ptr, slice};
 
-use log::error;
+use tracing::error;
 
 use crate::sys::Events;
 use crate::{Interests, Token};

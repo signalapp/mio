@@ -5,7 +5,7 @@ use std::sync::atomic::{AtomicUsize, Ordering};
 use std::time::Duration;
 use std::{fmt, io};
 
-use log::trace;
+use tracing::trace;
 
 use crate::{event, sys, Events, Interests, Token};
 
