@@ -36,8 +36,10 @@ mio = "0.6"
 
 Then, add this to your crate root:
 
-```rust
-extern crate mio;
+```rust 
+
+use mio::*
+
 ```
 
 ## Features
